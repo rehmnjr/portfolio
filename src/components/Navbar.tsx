@@ -47,7 +47,7 @@ export default function Navbar() {
     <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'py-3 glass' : 'py-5 bg-transparent'}`}>
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="#hero" className="text-2xl font-bold text-primary">
-          MERN<span className="text-accent">Dev</span>
+          Rehman<span className="text-accent">Jr</span>
         </a>
 
         {/* Mobile Menu Button */}

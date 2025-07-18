@@ -61,7 +61,7 @@ export default function ContactSection() {
                     href="mailto:contact@merndev.com"
                     className="text-foreground/70 hover:text-primary transition-colors"
                   >
-                    contact@merndev.com
+                    rehmnfahim@gmail.com
                   </a>
                 </div>
               </div>
@@ -74,7 +74,7 @@ export default function ContactSection() {
                     href="tel:+11234567890"
                     className="text-foreground/70 hover:text-secondary transition-colors"
                   >
-                    +1 (123) 456-7890
+                    +91 7065047573
                   </a>
                 </div>
               </div>
@@ -84,7 +84,7 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-medium mb-1">Location</h4>
                   <p className="text-foreground/70">
-                    San Francisco, CA, USA
+                    Noida sector-110, U.P.
                   </p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ export default function ContactSection() {
               <h4 className="font-medium mb-3">Connect with me</h4>
               <div className="flex space-x-4">
                 <a 
-                  href="#" 
+                  href="https://github.com/rehmnjr" 
                   className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 transition-colors"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -110,7 +110,7 @@ export default function ContactSection() {
                   </svg>
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.linkedin.com/in/fahimrehman/" 
                   className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 transition-colors"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

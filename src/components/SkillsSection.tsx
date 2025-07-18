@@ -22,11 +22,12 @@ export default function SkillsSection() {
       icon: <Code size={24} />,
       color: "primary",
       skills: [
-        { name: "React", level: 95, icon: "⚛️" },
-        { name: "JavaScript", level: 90, icon: "🟨" },
-        { name: "TypeScript", level: 85, icon: "🔷" },
-        { name: "HTML/CSS", level: 90, icon: "🎨" },
-        { name: "Redux", level: 85, icon: "🔄" },
+        { name: "React", level: 95, icon: "https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react-512.png" },
+        { name: "JavaScript", level: 90, icon: "https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png" },
+        { name: "TypeScript", level: 85, icon: "https://cdn-icons-png.flaticon.com/512/919/919832.png" },
+        { name: "HTML/CSS", level: 90, icon: "https://cdn0.iconfinder.com/data/icons/social-network-9/50/22-512.png" },
+        { name: "Redux", level: 85, icon: "https://img.icons8.com/?size=512&id=jD-fJzVguBmw&format=png" },
+        { name: "Tailwindcss", level: 99, icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png" },
       ]
     },
     backend: {
@@ -34,11 +35,10 @@ export default function SkillsSection() {
       icon: <Server size={24} />,
       color: "secondary",
       skills: [
-        { name: "Node.js", level: 90, icon: "🟢" },
-        { name: "Express", level: 88, icon: "🚀" },
-        { name: "REST API", level: 92, icon: "🔗" },
-        { name: "GraphQL", level: 80, icon: "📊" },
-        { name: "Authentication", level: 85, icon: "🔐" },
+        { name: "Node.js", level: 90, icon: "https://img.icons8.com/fluent/512/node-js.png" },
+        { name: "Express", level: 88, icon: "https://img.icons8.com/nolan/512/express-js.png" },
+        { name: "REST API", level: 92, icon: "https://cdn-icons-png.flaticon.com/512/9002/9002357.png" },
+        { name: "Authentication", level: 85, icon: "https://icons.veryicon.com/png/o/miscellaneous/simple-line-icon/authentication-16.png" },
       ]
     },
     database: {
@@ -46,11 +46,11 @@ export default function SkillsSection() {
       icon: <Database size={24} />,
       color: "accent",
       skills: [
-        { name: "MongoDB", level: 92, icon: "🍃" },
-        { name: "Mongoose", level: 88, icon: "🦫" },
-        { name: "SQL", level: 75, icon: "📋" },
-        { name: "Redis", level: 70, icon: "🔴" },
-        { name: "Data Modeling", level: 85, icon: "📐" },
+        { name: "MongoDB", level: 92, icon: "https://user-images.githubusercontent.com/12401985/69677784-80bec400-1082-11ea-89b2-b2120eb84676.png" },
+        { name: "Mongoose", level: 88, icon: "https://images.seeklogo.com/logo-png/46/2/mongoose-web-server-logo-png_seeklogo-460160.png" },
+        { name: "SQL", level: 75, icon: "https://cdn-icons-png.flaticon.com/512/603/603201.png" },
+        { name: "Json", level: 70, icon: "https://cdn-icons-png.flaticon.com/512/12419/12419185.png" },
+        { name: "Data Modeling", level: 85, icon: "https://cdn-icons-png.flaticon.com/512/1998/1998540.png" },
       ]
     },
     other: {
@@ -58,11 +58,11 @@ export default function SkillsSection() {
       icon: <Globe size={24} />,
       color: "primary",
       skills: [
-        { name: "Git", level: 90, icon: "🌿" },
-        { name: "CI/CD", level: 85, icon: "🔄" },
-        { name: "Testing", level: 80, icon: "🧪" },
-        { name: "Agile/Scrum", level: 85, icon: "🏃" },
-        { name: "AWS/Azure", level: 75, icon: "☁️" },
+        { name: "Git", level: 90, icon: "https://cdn-icons-png.flaticon.com/512/4494/4494740.png" },
+         { name: "Figma", level: 75, icon: "https://icons.veryicon.com/png/o/application/app-icon-7/figma-1.png" },
+        { name: "CI/CD", level: 85, icon: "https://miro.medium.com/v2/resize:fit:1200/1*v57IL3HDCCgbowOLbzFVkw.png" },
+        { name: "Postman", level: 80, icon: "https://www.svgrepo.com/show/354202/postman-icon.svg" },
+        { name: "Agile/Scrum", level: 85, icon: "https://cdn-icons-png.flaticon.com/512/3967/3967015.png" },
       ]
     },
   };
@@ -127,7 +127,7 @@ export default function SkillsSection() {
                 <div key={skill.name} className="animate-fade-in hover:scale-[1.02] transition-all duration-300 group" style={{ animationDelay: `${index * 0.1}s` }}>
                   <div className="flex justify-between items-center mb-3">
                     <span className="font-medium flex items-center gap-2">
-                      <span className="text-xl group-hover:animate-bounce">{skill.icon}</span>
+                      <span className="text-xl group-hover:animate-bounce"><img src={skill.icon} alt={skill.name} width={22}/></span>
                       {skill.name}
                     </span>
                     <span className="text-primary font-bold text-lg animate-pulse">{skill.level}%</span>
@@ -140,7 +140,7 @@ export default function SkillsSection() {
                         animation: 'rainbow 3s ease infinite'
                       }}
                     >
-                      <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
+                      <div className="absolute inset-0 bg-green-500/20 animate-pulse"></div>
                     </div>
                   </div>
                 </div>
@@ -152,15 +152,15 @@ export default function SkillsSection() {
         {/* MERN Stack Showcase */}
         <div className="mt-16 glass p-8 rounded-xl animate-fade-in hover:scale-[1.01] transition-all duration-300" style={{ animationDelay: "0.4s" }}>
           <h3 className="text-2xl font-bold mb-8 text-center flex items-center justify-center gap-2">
-            <Heart className="w-6 h-6 text-red-500 animate-pulse" />
+            <Code className="w-6 h-6 text-purple-500 animate-pulse" />
             MERN Stack Expertise
-            <Heart className="w-6 h-6 text-red-500 animate-pulse" />
+            <Code className="w-6 h-6 text-purple-500 animate-pulse" />
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="p-6 rounded-lg bg-card/70 border border-primary/20 hover:border-primary/40 transition-all hover:scale-105 cursor-pointer group mouse-cursor-gradient-tracking">
               <div className="mb-4 text-primary group-hover:animate-bounce">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-all">
-                  <Code size={28} />
+                  <img src='https://user-images.githubusercontent.com/12401985/69677784-80bec400-1082-11ea-89b2-b2120eb84676.png' alt="mongoDB" />
                 </div>
               </div>
               <h4 className="font-bold mb-2 text-lg">MongoDB</h4>
@@ -172,7 +172,7 @@ export default function SkillsSection() {
             <div className="p-6 rounded-lg bg-card/70 border border-secondary/20 hover:border-secondary/40 transition-all hover:scale-105 cursor-pointer group mouse-cursor-gradient-tracking">
               <div className="mb-4 text-secondary group-hover:animate-bounce">
                 <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center group-hover:bg-secondary/20 transition-all">
-                  <Server size={28} />
+                  <img src="https://img.icons8.com/nolan/512/express-js.png" alt="express" />
                 </div>
               </div>
               <h4 className="font-bold mb-2 text-lg">Express</h4>
@@ -184,7 +184,7 @@ export default function SkillsSection() {
             <div className="p-6 rounded-lg bg-card/70 border border-accent/20 hover:border-accent/40 transition-all hover:scale-105 cursor-pointer group mouse-cursor-gradient-tracking">
               <div className="mb-4 text-accent group-hover:animate-bounce">
                 <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center group-hover:bg-accent/20 transition-all">
-                  <Palette size={28} />
+                  <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="react" />
                 </div>
               </div>
               <h4 className="font-bold mb-2 text-lg">React</h4>
@@ -196,7 +196,7 @@ export default function SkillsSection() {
             <div className="p-6 rounded-lg bg-card/70 border border-primary/20 hover:border-primary/40 transition-all hover:scale-105 cursor-pointer group mouse-cursor-gradient-tracking">
               <div className="mb-4 text-primary group-hover:animate-bounce">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-all">
-                  <LineChart size={28} />
+                  <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="Node" />
                 </div>
               </div>
               <h4 className="font-bold mb-2 text-lg">Node.js</h4>

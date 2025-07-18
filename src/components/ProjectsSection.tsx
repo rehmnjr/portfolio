@@ -19,39 +19,75 @@ export default function ProjectsSection() {
   const projects: Project[] = [
     {
       id: 1,
-      title: "E-Commerce Platform",
+      title: "EdTech Platform",
       description: "A full-featured e-commerce platform with product catalog, cart functionality, secure checkout, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1661956602116-aa6865609028?q=80&w=1064&auto=format&fit=crop",
+      image: "https://media.licdn.com/dms/image/v2/D5622AQFzLa9iouuj4w/feedshare-shrink_800/B56ZcLf9mpGoAg-/0/1748244626357?e=1755734400&v=beta&t=vgln-bAMr37Gq__aGt1UCJV4UW77pIxo_ivgD4CXPz4",
       tags: ["MongoDB", "Express", "React", "Node.js", "Redux"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example/project"
+      liveUrl: "https://knowledgeconnectapp.onrender.com/",
+      githubUrl: "https://github.com/rehmnjr/KnowledgeConnectApp"
     },
     {
       id: 2,
-      title: "Task Management App",
+      title: "Data Visualization Dashboard",
       description: "A collaborative task management application with real-time updates, drag-and-drop interfaces, and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1611224885990-ab7363d1f2a9?q=80&w=1039&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1015&auto=format&fit=crop",
       tags: ["React", "Node.js", "Socket.io", "MongoDB", "Express"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example/project"
+      liveUrl: "https://indianagro-dashboard.onrender.com/",
+      githubUrl: "https://github.com/rehmnjr/IndianAgro_Dashboard"
     },
     {
       id: 3,
-      title: "Social Media Dashboard",
+      title: "WA Sender Landing Page",
       description: "A comprehensive social media analytics dashboard with data visualization, sentiment analysis, and scheduling capabilities.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1015&auto=format&fit=crop",
+      image: "https://superblog.supercdn.cloud/site_cuid_cm7sqssg4005wnw4g5a487ytc/images/screenshot-2025-04-03-at-3-1743673857965-compressed.png",
       tags: ["React", "Chart.js", "Express", "MongoDB", "OAuth"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example/project"
+      liveUrl: "https://wasender-y60o.onrender.com/",
+      githubUrl: "https://github.com/rehmnjr/WAsender"
     },
     {
       id: 4,
-      title: "Real Estate Marketplace",
+      title: "GFG CLONE",
       description: "A real estate platform featuring property listings, advanced search, map integration, and virtual tours.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1172&auto=format&fit=crop",
+      image: "https://media.geeksforgeeks.org/wp-content/uploads/20240124145208/Screenshot-2024-01-24-144732.jpg",
       tags: ["MERN", "Google Maps API", "Cloudinary", "Authentication"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example/project"
+      liveUrl: "https://gfg-clone.onrender.com/",
+      githubUrl: "https://github.com/rehmnjr/gfg_clone"
+    },
+     {
+      id: 5,
+      title: "Calculator",
+      description: "A real estate platform featuring property listings, advanced search, map integration, and virtual tours.",
+      image: "https://www.figma.com/community/resource/fb1a4efc-5870-4685-bfaa-3fc6a3f7c3b8/thumbnail",
+      tags: ["MERN", "Google Maps API", "Cloudinary", "Authentication"],
+      liveUrl: "https://calculator-g5sp.onrender.com/",
+      githubUrl: "https://github.com/rehmnjr/Calculator"
+    },
+    {
+      id: 6,
+      title: "Tic-Tac-Toe",
+      description: "A real estate platform featuring property listings, advanced search, map integration, and virtual tours.",
+      image: "https://assetstorev1-prd-cdn.unity3d.com/key-image/4420e81d-fbaf-4810-8dc3-e293bb0c0dcb.jpg",
+      tags: ["MERN", "Google Maps API", "Cloudinary", "Authentication"],
+      liveUrl: "https://tic-tac-toe-bnw1.onrender.com/",
+      githubUrl: "https://github.com/rehmnjr/tic-tac-toe"
+    },
+    {
+      id: 7,
+      title: "To Do List",
+      description: "A real estate platform featuring property listings, advanced search, map integration, and virtual tours.",
+      image: "https://www.bytewebster.com/javascriptprojects/uploads/images/todo-list-javascriptapp.png",
+      tags: ["MERN", "Google Maps API", "Cloudinary", "Authentication"],
+      liveUrl: "https://todolistapp-vay2.onrender.com/",
+      githubUrl: "https://github.com/rehmnjr/ToDoListApp"
+    },
+    {
+      id: 8,
+      title: "Analog Clock",
+      description: "A real estate platform featuring property listings, advanced search, map integration, and virtual tours.",
+      image: "https://codehim.com/wp-content/uploads/2023/10/analog-and-digital-clock-design-using-html-css.png",
+      tags: ["MERN", "Google Maps API", "Cloudinary", "Authentication"],
+      liveUrl: "https://analogclock-kla1.onrender.com/",
+      githubUrl: "https://github.com/rehmnjr/analog_clock"
     }
   ];
 

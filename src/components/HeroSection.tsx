@@ -1,7 +1,8 @@
 
 import { ArrowDown, Sparkles, Code, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
+import { url } from 'inspector';
+import resume from '../assets/resume.pdf'
 export default function HeroSection() {
   return (
     <section id="hero" className="min-h-screen flex flex-col justify-center relative overflow-hidden">
@@ -16,16 +17,18 @@ export default function HeroSection() {
       {/* Floating icons */}
       <div className="absolute inset-0 pointer-events-none">
         <Code className="absolute top-20 left-20 w-8 h-8 text-primary/30 animate-float" style={{ animationDelay: '0.5s' }} />
-        <Heart className="absolute top-40 right-32 w-6 h-6 text-secondary/40 animate-bounce-slow" style={{ animationDelay: '1.5s' }} />
-        <Sparkles className="absolute bottom-40 left-32 w-7 h-7 text-accent/40 animate-spin-slow" style={{ animationDelay: '2.5s' }} />
+        <Sparkles className="absolute top-20 right-32 w-6 h-6 text-secondary/40 animate-spin-slow" style={{ animationDelay: '1.5s' }} />
+        <Sparkles className="absolute bottom-40 left-20 w-7 h-7 text-accent/40 animate-spin-slow" style={{ animationDelay: '2.5s' }} />
+        <Code className="absolute bottom-40 right-32 w-8 h-8 text-primary/30 animate-float" style={{ animationDelay: '0.5s' }} />
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center animate-fade-in">
+        <div className="max-w-4xl mt-20 mx-auto text-center animate-fade-in">
           <div className="mb-6">
             <div className="inline-block animate-bounce-slow">
-              <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center animate-glow">
-                <Code className="w-10 h-10 text-white animate-pulse" />
+              <div className="w-60 h-60 mx-auto mb-4 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center animate-glow"
+              style={{backgroundImage: `url('https://media.licdn.com/dms/image/v2/D5603AQFPpAraRiwGnQ/profile-displayphoto-shrink_200_200/B56ZbnXvdFG4AY-/0/1747638483433?e=2147483647&v=beta&t=X8vEH9Bes-sDuKwwgruGlcibiB9jCH6nt9Jc-f1HU5E')`, backgroundSize:'cover'}}>
+                {/* <Code className="w-10 h-10 text-white animate-pulse" /> */}
               </div>
             </div>
           </div>
@@ -46,12 +49,13 @@ export default function HeroSection() {
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary/80 hover:scale-105 transition-all duration-300 animate-glow group"
+              className="bg-primary hover:bg-primary/80 hover:scale-105 transition-all duration-800 animate-glow group"
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Sparkles className="w-4 h-4 mr-2 group-hover:animate-spin" />
               View My Work
             </Button>
+            <a href={resume} download={resume}>
             <Button 
               variant="outline" 
               size="lg" 
@@ -60,7 +64,9 @@ export default function HeroSection() {
               <ArrowDown className="w-4 h-4 mr-2 group-hover:animate-bounce" />
               Download CV
             </Button>
+            </a>
           </div>
+          
           
           {/* Fun interactive elements */}
           <div className="mt-12 flex justify-center gap-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
@@ -88,14 +94,6 @@ export default function HeroSection() {
         </div>
       </div>
       
-      <a 
-        href="#about" 
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-foreground/70 hover:text-primary transition-colors animate-bounce group"
-      >
-        <div className="p-2 rounded-full bg-card/20 backdrop-blur-sm border border-white/10 group-hover:bg-primary/10 group-hover:scale-110 transition-all">
-          <ArrowDown size={32} className="group-hover:animate-bounce" />
-        </div>
-      </a>
     </section>
   );
 }
