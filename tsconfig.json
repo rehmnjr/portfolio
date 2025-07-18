@@ -9,6 +9,7 @@
     "paths": {
       "@/*": ["./src/*"]
     },
+    "types": ["tailwindcss"],
     "noImplicitAny": false,
     "noUnusedParameters": false,
     "skipLibCheck": true,

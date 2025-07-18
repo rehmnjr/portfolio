@@ -1,6 +1,3 @@
-
-42
-
 import { useState, useEffect } from 'react';
 import { ArrowUp } from 'lucide-react';
 
