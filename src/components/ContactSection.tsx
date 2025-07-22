@@ -1,10 +1,10 @@
-
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+
 export default function ContactSection() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -20,48 +20,64 @@ export default function ContactSection() {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setIsSubmitting(true);
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
 
-  const form = new FormData(e.target as HTMLFormElement);
-  form.append("access_key", "784b38f5-20c7-410a-98c3-cc86d7c74472");
-  form.append("name", formData.name);
-  form.append("email", formData.email);
-  form.append("subject", formData.subject);
-  form.append("message", formData.message);
+    // Create a FormData object
+    const data = new FormData();
+    data.append("access_key", "784b38f5-20c7-410a-98c3-cc86d7c74472");
+    data.append("name", formData.name);
+    data.append("email", formData.email);
+    data.append("subject", formData.subject);
+    data.append("message", formData.message);
+    data.append("botcheck", ""); 
 
-  try {
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: form,
-    });
+    console.log("Attempting to send form data:", Object.fromEntries(data.entries()));
 
-    const result = await response.json();
-
-    if (result.success) {
-      toast({
-        title: "Message sent successfully!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        
+        body: data, 
       });
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    } else {
+
+      console.log("Response status:", response.status);
+
+      const result = await response.json(); 
+      
+      console.log('Web3Forms API response:', result);
+
+      if (result.success) {
+        toast({
+          title: "Message sent successfully!",
+          description: "Thank you for reaching out. I'll get back to you soon.",
+        });
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
+      } else {
+        console.error('Web3Forms error (not successful):', result);
+        toast({
+          title: "Failed to send message.",
+          description: result.message || "Something went wrong. Please try again later.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      console.error('Submission error:', error);
       toast({
-        title: "Failed to send message",
-        description: result.message || "Something went wrong.",
+        title: "Failed to send message.",
+        description: "Network error or unexpected issue. Please try again.",
         variant: "destructive",
       });
+    } finally {
+      setIsSubmitting(false);
     }
-  } catch (error) {
-    toast({
-      title: "Network error",
-      description: "Could not reach the server. Please try again later.",
-      variant: "destructive",
-    });
-  }
-
-  setIsSubmitting(false);
-};
+  };
 
   return (
     <section id="contact" className="py-20">
@@ -163,10 +179,7 @@ const handleSubmit = async (e: React.FormEvent) => {
           <div className="glass p-6 rounded-xl">
             <h3 className="text-xl font-bold mb-6">Send Me a Message</h3>
             
-            <form  onSubmit={handleSubmit} className="space-y-6" >
-              <input type="hidden" name="access_key" value="784b38f5-20c7-410a-98c3-cc86d7c74472" />
-              <input type="hidden" name="redirect" value="https://your-redirect-url.com/success" />
-              <input type="checkbox" name="botcheck" style={{ display: 'none' }} />
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2">
