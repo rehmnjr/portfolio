@@ -20,28 +20,48 @@ export default function ContactSection() {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    console.log(formData);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  const form = new FormData(e.target as HTMLFormElement);
+  form.append("access_key", "784b38f5-20c7-410a-98c3-cc86d7c74472");
+  form.append("name", formData.name);
+  form.append("email", formData.email);
+  form.append("subject", formData.subject);
+  form.append("message", formData.message);
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: form,
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      toast({
+        title: "Message sent successfully!",
+        description: "Thank you for reaching out. I'll get back to you soon.",
+      });
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    } else {
+      toast({
+        title: "Failed to send message",
+        description: result.message || "Something went wrong.",
+        variant: "destructive",
+      });
+    }
+  } catch (error) {
     toast({
-      title: "Message sent successfully!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
+      title: "Network error",
+      description: "Could not reach the server. Please try again later.",
+      variant: "destructive",
     });
-    
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
-    });
-    
-    setIsSubmitting(false);
-  };
+  }
+
+  setIsSubmitting(false);
+};
 
   return (
     <section id="contact" className="py-20">
@@ -143,7 +163,10 @@ export default function ContactSection() {
           <div className="glass p-6 rounded-xl">
             <h3 className="text-xl font-bold mb-6">Send Me a Message</h3>
             
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form  onSubmit={handleSubmit} className="space-y-6" >
+              <input type="hidden" name="access_key" value="784b38f5-20c7-410a-98c3-cc86d7c74472" />
+              <input type="hidden" name="redirect" value="https://your-redirect-url.com/success" />
+              <input type="checkbox" name="botcheck" style={{ display: 'none' }} />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2">
