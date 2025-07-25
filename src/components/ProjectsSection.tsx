@@ -19,8 +19,8 @@ export default function ProjectsSection() {
   const projects: Project[] = [
     {
       id: 1,
-      title: "EdTech Platform",
-      description: "A full-featured e-commerce platform with product catalog, cart functionality, secure checkout, and admin dashboard.",
+      title: "KnowledgeConnect - EdTech Platform",
+      description: "KnowledgeConnect is a peer-to-peer learning platform that lets students connect, share expertise, and resolve academic doubts through topic-based collaboration.",
       image: "https://media.licdn.com/dms/image/v2/D5622AQFzLa9iouuj4w/feedshare-shrink_800/B56ZcLf9mpGoAg-/0/1748244626357?e=1755734400&v=beta&t=vgln-bAMr37Gq__aGt1UCJV4UW77pIxo_ivgD4CXPz4",
       tags: ["MongoDB", "Express", "React", "Node.js", "Redux"],
       liveUrl: "https://knowledgeconnectapp.onrender.com/",
@@ -29,7 +29,7 @@ export default function ProjectsSection() {
     {
       id: 2,
       title: "Data Visualization Dashboard",
-      description: "A collaborative task management application with real-time updates, drag-and-drop interfaces, and team collaboration features.",
+      description: "Interactive dashboard for visualizing on given agricultural data and analytics.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1015&auto=format&fit=crop",
       tags: ["React", "Node.js", "Socket.io", "MongoDB", "Express"],
       liveUrl: "https://indianagro-dashboard.onrender.com/",
@@ -38,54 +38,54 @@ export default function ProjectsSection() {
     {
       id: 3,
       title: "WA Sender Landing Page",
-      description: "A comprehensive social media analytics dashboard with data visualization, sentiment analysis, and scheduling capabilities.",
+      description: "Landing page for a WhatsApp automation tool with user-friendly UI.",
       image: "https://superblog.supercdn.cloud/site_cuid_cm7sqssg4005wnw4g5a487ytc/images/screenshot-2025-04-03-at-3-1743673857965-compressed.png",
-      tags: ["React", "Chart.js", "Express", "MongoDB", "OAuth"],
+      tags: ["React", "Vite", "TailwindCss", "Javascript", "Redux"],
       liveUrl: "https://wasender-y60o.onrender.com/",
       githubUrl: "https://github.com/rehmnjr/WAsender"
     },
     {
       id: 4,
       title: "GFG CLONE",
-      description: "A real estate platform featuring property listings, advanced search, map integration, and virtual tours.",
+      description: "A clone of GeeksforGeeks Landing Page, focused on interactive UI and Implemented Light/Dark Theme",
       image: "https://media.geeksforgeeks.org/wp-content/uploads/20240124145208/Screenshot-2024-01-24-144732.jpg",
-      tags: ["MERN", "Google Maps API", "Cloudinary", "Authentication"],
+      tags: ["HTML", "CSS", "JavaScript"],
       liveUrl: "https://gfg-clone.onrender.com/",
       githubUrl: "https://github.com/rehmnjr/gfg_clone"
     },
      {
       id: 5,
       title: "Calculator",
-      description: "A real estate platform featuring property listings, advanced search, map integration, and virtual tours.",
+      description: "A simple and responsive calculator built with Javascript with modern User Interface and can perform calculations.",
       image: "https://www.figma.com/community/resource/fb1a4efc-5870-4685-bfaa-3fc6a3f7c3b8/thumbnail",
-      tags: ["MERN", "Google Maps API", "Cloudinary", "Authentication"],
+      tags: ["HTML", "CSS", "JavaScript", "Figma"],
       liveUrl: "https://calculator-g5sp.onrender.com/",
       githubUrl: "https://github.com/rehmnjr/Calculator"
     },
     {
       id: 6,
       title: "Tic-Tac-Toe",
-      description: "A real estate platform featuring property listings, advanced search, map integration, and virtual tours.",
+      description: "Classic Tic-Tac-Toe game with responsive UI and multiplayer logic.",
       image: "https://assetstorev1-prd-cdn.unity3d.com/key-image/4420e81d-fbaf-4810-8dc3-e293bb0c0dcb.jpg",
-      tags: ["MERN", "Google Maps API", "Cloudinary", "Authentication"],
+      tags: ["HTML", "CSS", "JavaScript", "Figma"],
       liveUrl: "https://tic-tac-toe-bnw1.onrender.com/",
       githubUrl: "https://github.com/rehmnjr/tic-tac-toe"
     },
     {
       id: 7,
       title: "To Do List",
-      description: "A real estate platform featuring property listings, advanced search, map integration, and virtual tours.",
+      description: "Task management app to add, delete, and update your daily to-dos.",
       image: "https://www.bytewebster.com/javascriptprojects/uploads/images/todo-list-javascriptapp.png",
-      tags: ["MERN", "Google Maps API", "Cloudinary", "Authentication"],
+      tags: ["React", "TailwindCss", "Javascript", "Redux"],
       liveUrl: "https://todolistapp-vay2.onrender.com/",
       githubUrl: "https://github.com/rehmnjr/ToDoListApp"
     },
     {
       id: 8,
       title: "Analog Clock",
-      description: "A real estate platform featuring property listings, advanced search, map integration, and virtual tours.",
+      description: "An animated analog clock built using HTML, CSS, and JavaScript.",
       image: "https://codehim.com/wp-content/uploads/2023/10/analog-and-digital-clock-design-using-html-css.png",
-      tags: ["MERN", "Google Maps API", "Cloudinary", "Authentication"],
+      tags: ["HTML", "CSS", "JavaScript", "Figma"],
       liveUrl: "https://analogclock-kla1.onrender.com/",
       githubUrl: "https://github.com/rehmnjr/analog_clock"
     }
