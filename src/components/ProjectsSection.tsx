@@ -152,12 +152,9 @@ export default function ProjectsSection() {
                     </a>
                   </div>
                   
-                  <a 
-                    href="#" 
-                    className="flex items-center text-foreground/70 hover:text-primary transition-colors"
-                  >
+                  {/* <a href="#" className="flex items-center text-foreground/70 hover:text-primary transition-colors">
                     Details <ArrowRight size={16} className="ml-1" />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
