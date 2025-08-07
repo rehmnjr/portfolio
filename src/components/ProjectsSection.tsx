@@ -17,8 +17,17 @@ export default function ProjectsSection() {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
   
   const projects: Project[] = [
+      {
+      "id": 1,
+      "title": "AskMyDoc - A PDF Chatbot (RAG System)",
+      "description": "AskMyDoc is a web-based application that allows users to chat with their PDF documents. It leverages Retrieval-Augmented Generation (RAG) to provide accurate, context-aware answers directly from the content of uploaded PDFs, acting as a personal document-based knowledge assistant.",
+      "image": "https://media.licdn.com/dms/image/v2/D5622AQGf_1wLI9lE2A/feedshare-shrink_800/B56ZiDfEmuHcAg-/0/1754552622601?e=1757548800&v=beta&t=g0--Lby2jheF8GCM-lZADJB8WH0rELttLqz3rhnZHH0",
+      "tags": ["Next.js", "React", "Node.js", "Express", "LangChain", "Google Generative AI", "HNSWLib"],
+      "liveUrl": "https://askmydoc-pi.vercel.app/",
+      "githubUrl": "https://github.com/rehmnjr/AskMyDoc"
+    },
     {
-      id: 1,
+      id: 2,
       title: "KnowledgeConnect - EdTech Platform",
       description: "KnowledgeConnect is a peer-to-peer learning platform that lets students connect, share expertise, and resolve academic doubts through topic-based collaboration.",
       image: "https://media.licdn.com/dms/image/v2/D5622AQFzLa9iouuj4w/feedshare-shrink_800/B56ZcLf9mpGoAg-/0/1748244626357?e=1755734400&v=beta&t=vgln-bAMr37Gq__aGt1UCJV4UW77pIxo_ivgD4CXPz4",
@@ -27,7 +36,7 @@ export default function ProjectsSection() {
       githubUrl: "https://github.com/rehmnjr/KnowledgeConnectApp"
     },
     {
-      id: 2,
+      id: 3,
       title: "Data Visualization Dashboard",
       description: "Interactive dashboard for visualizing on given agricultural data and analytics.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1015&auto=format&fit=crop",
@@ -36,7 +45,7 @@ export default function ProjectsSection() {
       githubUrl: "https://github.com/rehmnjr/IndianAgro_Dashboard"
     },
     {
-      id: 3,
+      id: 4,
       title: "WA Sender Landing Page",
       description: "Landing page for a WhatsApp automation tool with user-friendly UI.",
       image: "https://superblog.supercdn.cloud/site_cuid_cm7sqssg4005wnw4g5a487ytc/images/screenshot-2025-04-03-at-3-1743673857965-compressed.png",
@@ -45,7 +54,7 @@ export default function ProjectsSection() {
       githubUrl: "https://github.com/rehmnjr/WAsender"
     },
     {
-      id: 4,
+      id: 5,
       title: "GFG CLONE",
       description: "A clone of GeeksforGeeks Landing Page, focused on interactive UI and Implemented Light/Dark Theme",
       image: "https://media.geeksforgeeks.org/wp-content/uploads/20240124145208/Screenshot-2024-01-24-144732.jpg",
@@ -54,7 +63,7 @@ export default function ProjectsSection() {
       githubUrl: "https://github.com/rehmnjr/gfg_clone"
     },
      {
-      id: 5,
+      id: 6,
       title: "Calculator",
       description: "A simple and responsive calculator built with Javascript with modern User Interface and can perform calculations.",
       image: "https://www.figma.com/community/resource/fb1a4efc-5870-4685-bfaa-3fc6a3f7c3b8/thumbnail",
@@ -63,7 +72,7 @@ export default function ProjectsSection() {
       githubUrl: "https://github.com/rehmnjr/Calculator"
     },
     {
-      id: 6,
+      id: 7,
       title: "Tic-Tac-Toe",
       description: "Classic Tic-Tac-Toe game with responsive UI and multiplayer logic.",
       image: "https://assetstorev1-prd-cdn.unity3d.com/key-image/4420e81d-fbaf-4810-8dc3-e293bb0c0dcb.jpg",
@@ -72,7 +81,7 @@ export default function ProjectsSection() {
       githubUrl: "https://github.com/rehmnjr/tic-tac-toe"
     },
     {
-      id: 7,
+      id: 8,
       title: "To Do List",
       description: "Task management app to add, delete, and update your daily to-dos.",
       image: "https://www.bytewebster.com/javascriptprojects/uploads/images/todo-list-javascriptapp.png",
@@ -81,7 +90,7 @@ export default function ProjectsSection() {
       githubUrl: "https://github.com/rehmnjr/ToDoListApp"
     },
     {
-      id: 8,
+      id: 9,
       title: "Analog Clock",
       description: "An animated analog clock built using HTML, CSS, and JavaScript.",
       image: "https://codehim.com/wp-content/uploads/2023/10/analog-and-digital-clock-design-using-html-css.png",
