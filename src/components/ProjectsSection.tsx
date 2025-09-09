@@ -17,8 +17,17 @@ export default function ProjectsSection() {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
   
   const projects: Project[] = [
-      {
+    {
       "id": 1,
+      "title": "DSA Instructor - A DSA Chatbot",
+      "description":"DSA-Instructor is an AI-powered assistant built with the Gemini API, designed to help users understand and solve Data Structures & Algorithms (DSA) problems through natural language queries.",
+      "image": "https://media.licdn.com/dms/image/v2/D5622AQFAk1_SE-vAdw/feedshare-shrink_800/B56ZkvbPtSHcAg-/0/1757437298126?e=1760572800&v=beta&t=k2K21XpjsERcZ3eCPEpJaFIvBNacTujmGVWH3417YTs",
+      "tags": ["React", "Node.js", "Express", "Gemini", "Google Generative AI", "Tailwind","Vant"],
+      "liveUrl": "https://dsa-instructor-xyar.onrender.com/",
+      "githubUrl": "https://github.com/rehmnjr/DSA-Instructor"
+    },
+      {
+      "id": 2,
       "title": "AskMyDoc - A PDF Chatbot (RAG System)",
       "description": "AskMyDoc is a web-based application that allows users to chat with their PDF documents. It leverages Retrieval-Augmented Generation (RAG) to provide accurate, context-aware answers directly from the content of uploaded PDFs, acting as a personal document-based knowledge assistant.",
       "image": "https://media.licdn.com/dms/image/v2/D5622AQGf_1wLI9lE2A/feedshare-shrink_800/B56ZiDfEmuHcAg-/0/1754552622601?e=1757548800&v=beta&t=g0--Lby2jheF8GCM-lZADJB8WH0rELttLqz3rhnZHH0",
@@ -27,34 +36,43 @@ export default function ProjectsSection() {
       "githubUrl": "https://github.com/rehmnjr/AskMyDoc"
     },
     {
-      id: 2,
+      id: 3,
       title: "KnowledgeConnect - EdTech Platform",
       description: "KnowledgeConnect is a peer-to-peer learning platform that lets students connect, share expertise, and resolve academic doubts through topic-based collaboration.",
-      image: "https://media.licdn.com/dms/image/v2/D5622AQFzLa9iouuj4w/feedshare-shrink_800/B56ZcLf9mpGoAg-/0/1748244626357?e=1755734400&v=beta&t=vgln-bAMr37Gq__aGt1UCJV4UW77pIxo_ivgD4CXPz4",
-      tags: ["MongoDB", "Express", "React", "Node.js", "Redux"],
+      image: "https://media.licdn.com/dms/image/v2/D5622AQFzLa9iouuj4w/feedshare-shrink_800/B56ZcLf9mpGoAg-/0/1748244626357?e=1760572800&v=beta&t=DjOpBT8FM04cw11tgf_Z-lZ5CdPAblYK5CeknVLjGBE",
+      tags: ["MongoDB", "Express", "React", "Node.js", "Redux","Tailwind"],
       liveUrl: "https://knowledgeconnectapp.onrender.com/",
       githubUrl: "https://github.com/rehmnjr/KnowledgeConnectApp"
     },
     {
-      id: 3,
+      id: 4,
+      title: "JobPortalApp  - A Job Platform",
+      description: "A responsive and dynamic job portal built with React.js. It allows users to search, filter, and apply for jobs, while employers can create and manage job listings. Features include dark/light mode toggle, salary range slider, real-time filtering, and a clean UI using Context API for state management.",
+      image: "https://media.licdn.com/dms/image/v2/D5622AQHmba3Ye0ijMA/feedshare-shrink_800/B56Zf9pFSHGUAg-/0/1752307097108?e=1760572800&v=beta&t=VRe8ihghpdALwD3rccexiuZaHVY6S8h5xqv-G3HBLak",
+      tags: ["MongoDB", "Express", "React", "Node.js", "Redux","context Management", "Tailwind"],
+      liveUrl: "https://jobportalapp-mnqv.onrender.com/",
+      githubUrl: "https://github.com/rehmnjr/jobportalapp"
+    },
+    {
+      id: 5,
       title: "Data Visualization Dashboard",
       description: "Interactive dashboard for visualizing on given agricultural data and analytics.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1015&auto=format&fit=crop",
-      tags: ["React", "Node.js", "Socket.io", "MongoDB", "Express"],
+      tags: ["React", "Node.js","Mantine UI","Tailwind", "MongoDB", "Express"],
       liveUrl: "https://indianagro-dashboard.onrender.com/",
       githubUrl: "https://github.com/rehmnjr/IndianAgro_Dashboard"
     },
     {
-      id: 4,
+      id: 6,
       title: "WA Sender Landing Page",
       description: "Landing page for a WhatsApp automation tool with user-friendly UI.",
-      image: "https://superblog.supercdn.cloud/site_cuid_cm7sqssg4005wnw4g5a487ytc/images/screenshot-2025-04-03-at-3-1743673857965-compressed.png",
+      image: "https://fuzen.io/wp-content/uploads/2024/11/image-edited.png",
       tags: ["React", "Vite", "TailwindCss", "Javascript", "Redux"],
       liveUrl: "https://wasender-y60o.onrender.com/",
       githubUrl: "https://github.com/rehmnjr/WAsender"
     },
     {
-      id: 5,
+      id: 7,
       title: "GFG CLONE",
       description: "A clone of GeeksforGeeks Landing Page, focused on interactive UI and Implemented Light/Dark Theme",
       image: "https://media.geeksforgeeks.org/wp-content/uploads/20240124145208/Screenshot-2024-01-24-144732.jpg",
@@ -63,7 +81,7 @@ export default function ProjectsSection() {
       githubUrl: "https://github.com/rehmnjr/gfg_clone"
     },
      {
-      id: 6,
+      id: 8,
       title: "Calculator",
       description: "A simple and responsive calculator built with Javascript with modern User Interface and can perform calculations.",
       image: "https://www.figma.com/community/resource/fb1a4efc-5870-4685-bfaa-3fc6a3f7c3b8/thumbnail",
@@ -72,7 +90,7 @@ export default function ProjectsSection() {
       githubUrl: "https://github.com/rehmnjr/Calculator"
     },
     {
-      id: 7,
+      id: 9,
       title: "Tic-Tac-Toe",
       description: "Classic Tic-Tac-Toe game with responsive UI and multiplayer logic.",
       image: "https://assetstorev1-prd-cdn.unity3d.com/key-image/4420e81d-fbaf-4810-8dc3-e293bb0c0dcb.jpg",
@@ -81,7 +99,7 @@ export default function ProjectsSection() {
       githubUrl: "https://github.com/rehmnjr/tic-tac-toe"
     },
     {
-      id: 8,
+      id: 10,
       title: "To Do List",
       description: "Task management app to add, delete, and update your daily to-dos.",
       image: "https://www.bytewebster.com/javascriptprojects/uploads/images/todo-list-javascriptapp.png",
@@ -89,15 +107,15 @@ export default function ProjectsSection() {
       liveUrl: "https://todolistapp-vay2.onrender.com/",
       githubUrl: "https://github.com/rehmnjr/ToDoListApp"
     },
-    {
-      id: 9,
-      title: "Analog Clock",
-      description: "An animated analog clock built using HTML, CSS, and JavaScript.",
-      image: "https://codehim.com/wp-content/uploads/2023/10/analog-and-digital-clock-design-using-html-css.png",
-      tags: ["HTML", "CSS", "JavaScript", "Figma"],
-      liveUrl: "https://analogclock-kla1.onrender.com/",
-      githubUrl: "https://github.com/rehmnjr/analog_clock"
-    }
+    // {
+    //   id: 11,
+    //   title: "Analog Clock",
+    //   description: "An animated analog clock built using HTML, CSS, and JavaScript.",
+    //   image: "https://codehim.com/wp-content/uploads/2023/10/analog-and-digital-clock-design-using-html-css.png",
+    //   tags: ["HTML", "CSS", "JavaScript", "Figma"],
+    //   liveUrl: "https://analogclock-kla1.onrender.com/",
+    //   githubUrl: "https://github.com/rehmnjr/analog_clock"
+    // }
   ];
 
   return (
