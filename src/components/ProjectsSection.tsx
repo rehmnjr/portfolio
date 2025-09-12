@@ -30,7 +30,7 @@ export default function ProjectsSection() {
       "id": 2,
       "title": "AskMyDoc - A PDF Chatbot (RAG System)",
       "description": "AskMyDoc is a web-based application that allows users to chat with their PDF documents. It leverages Retrieval-Augmented Generation (RAG) to provide accurate, context-aware answers directly from the content of uploaded PDFs, acting as a personal document-based knowledge assistant.",
-      "image": "https://media.licdn.com/dms/image/v2/D5622AQGf_1wLI9lE2A/feedshare-shrink_800/B56ZiDfEmuHcAg-/0/1754552622601?e=1757548800&v=beta&t=g0--Lby2jheF8GCM-lZADJB8WH0rELttLqz3rhnZHH0",
+      "image": "https://media.licdn.com/dms/image/v2/D5622AQGf_1wLI9lE2A/feedshare-shrink_2048_1536/B56ZiDfEmuHcAo-/0/1754552622130?e=1760572800&v=beta&t=_R8eH4xSVIaz_EMVdnoW-XZ1RXxNSmjUfOZ1T4Eqtmo",
       "tags": ["Next.js", "React", "Node.js", "Express", "LangChain", "Google Generative AI", "HNSWLib"],
       "liveUrl": "https://askmydoc-pi.vercel.app/",
       "githubUrl": "https://github.com/rehmnjr/AskMyDoc"
